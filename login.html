@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Blood Donor Hub</h1>
+        <p>Saving Lives</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <!-- <li><a href="donate.html">Donate</a></li> -->
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <main class="login-container">
+        <section class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="errorMessage" style="display: none; color: red;">Invalid username or password</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Blood Donor Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="login.js"></script> <!-- Include JS file -->
+</body>
+</html>
